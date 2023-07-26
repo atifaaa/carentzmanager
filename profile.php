@@ -1,0 +1,188 @@
+<?php
+session_start();
+if(isset($_SESSION['SES_SECURITY'])) 
+{
+	include "koneksi.php";
+	$idSecurity	= $_SESSION['SES_SECURITY'];
+	$idusr	= $_SESSION['SES_LOGIN'];
+	$idnm	= $_SESSION['SES_ID'];
+	$name	= $_SESSION['SES_USER'];
+	
+	
+	
+	
+?>	
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Carentz Dashboard Management System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+	  <?php 
+	  include ("header.php");
+	  ?>
+    <!-- END nav -->
+    
+    
+
+      
+
+
+     
+
+    <section class="ftco-section ftco-about">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/about.jpg);">
+					</div>
+					<div class="col-md-6 wrap-about ftco-animate">
+	          <div class="heading-section heading-section-white pl-md-5">
+	          	<span class="subheading">About us</span>
+	            <h2 class="mb-4">CaRentz Company</h2>
+
+	            <p>
+				In 2016, Muhammad Iqbal had the ambition to start Southeast Asia's first international car rental company. Equipped with nothing but his sound knowledge of the car rental industry; plus a resolute determination that he wanted to make something of himself, he set out to starting his own car rental business. He was joined in this endeavour by Felix Fernandez and David Chen, also industry veterans who share the same vision of building the region's homegrown car rental company.
+				</p>
+				<p align="justify">
+					Rather than acquiring a foreign franchise, the three gentlemen decided instead to build their very own brand. Inspired by the founder's surname CaRentz Rent A Car was born. The CaRentz is also a representation of the graciousness that reflects the company's Asian roots. Together, they established the first CaRentz Rent A Car offices in Malaysia and Singapore in 1994, and subsequently in Hong Kong two years later. 
+					</p>
+					<p align="justify">
+					Car rental businesses are inherently resource-intensive and heavy on capital, yet the three gentlemen found ways to pull through the first year. Armed with their network and knowledge of the industry, they established the foundations of the business and built the fleet size from zero to a respectable 200. The difficulty of acquiring the relevant business permits didn't deter the gentlemen from their vision.
+					</p>
+					<p align="justify">
+					At the first year, when they successfully signed up a new client, they would go to great lengths to ensure that the needs of that client was met. From there, their reputation grew. Soon after, companies like Boeing, Caltex and Amec Foster Wheeler were onboard with CaRentz Rent A Car, a move that the founders attribute as the client's faith in the product and the people of the company. Slowly but surely, the foundations of the business was put together and they were officially in the game.
+					</p>
+					<p align="justify">
+					As CaRentz sets its eyes on the coming years, the founders expect to grow the number of operations in the region as well as the number of cars the company operates. By growing the business, CaRentz aims to better serve the needs of customers in Asia. With the company's extensive network of business associates, CaRentz has the capability of providing customers with a car in just about any corner of the world.
+					</p>
+	            
+	            
+	          </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		 
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2"><a href="#" class="logo">Car<span>entz</span></a></h2>
+              <p>As CaRentz sets its eyes on the coming years, the founders expect to grow the number of operations in the region as well as the number of cars the company operates</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Information</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">About</a></li>
+                <li><a href="#" class="py-2 d-block">Services</a></li>
+                <li><a href="#" class="py-2 d-block">Term and Conditions</a></li>
+                <li><a href="#" class="py-2 d-block">Best Price Guarantee</a></li>
+                <li><a href="#" class="py-2 d-block">Privacy &amp; Cookies Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Customer Support</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">FAQ</a></li>
+                <li><a href="#" class="py-2 d-block">Payment Option</a></li>
+                <li><a href="#" class="py-2 d-block">Booking Tips</a></li>
+                <li><a href="#" class="py-2 d-block">How it works</a></li>
+                <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Jalan Cempaka Sd 12/5, Jalan PJU 9, Bandar Sri Damansara, 52200 Kuala Lumpur, Malaysia, Selangor, Malaysia</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+60 3-2117 8000</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">carentz@gmail.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  <?php 
+  include ("footer.php");
+  ?>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
+<?php
+}
+else
+{
+	include "session_warning.php";
+}
+?>
